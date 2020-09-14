@@ -8,6 +8,7 @@ module.exports = {
     // we will don't use, but we need to define a css.bundle.css
     clientstyle: './client/styles/styles.scss'
   },
+  
   output: {
     path: path.resolve(__dirname, 'client'),
     filename: '[name].bundle.js'
