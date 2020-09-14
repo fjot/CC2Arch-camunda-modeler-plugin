@@ -11,11 +11,6 @@ var htmlAngular =
   '<label>Angular Element</label>' +
   '<p style="font-size:50px; margin: 0">&#128532</p>'
 
-var htmlWebFrame =
-  '<label>Web Component</label>' +
-  '<br>' +
-  '<plantit-web-frame>Hi from SDK Web Frame with out functionality</plantit-web-frame>'
-
 var htmlTextField =
   '<div>' +
   '<label for="form_key">Form Key Text Proleit</label>' +
@@ -163,18 +158,6 @@ function proLeiTEntry(group, element) {
     }
   });
   
-  /**
-   * 
-   * 
-   *  Custom entries Web Component  
-   * 
-   * 
-   * */
-
-  group.entries.push({
-    id: 'proleit-angular',
-    html: htmlWebFrame
-  });
 
   /**
    * 
