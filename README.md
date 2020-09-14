@@ -9,6 +9,7 @@ To register a new plugin on camunda modeler is considered as a basis the officia
 ## Properties panel understanding
 
 
-![Image of properties panels](https://cc2archi.blob.core.windows.net/images/Group 6.jpg)
+![Image of properties panels]
+(https://cc2archi.blob.core.windows.net/images/ppdiagram.jpg)
 
 
