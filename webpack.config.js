@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
  * under one or more contributor license agreements. See the NOTICE file
@@ -8,15 +9,25 @@
  * except in compliance with the MIT License.
  */
 
+=======
+>>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 const path = require('path');
 
 module.exports = {
   mode: 'development',
   entry: {
     client: './client/client.js',
+<<<<<<< HEAD
     clientstyle: './client/styles/styles.scss'
   },
 
+=======
+    element: './client/angular-element/textInput.js',
+    // we will don't use, but we need to define a css.bundle.css
+    clientstyle: './client/styles/styles.scss'
+  },
+  
+>>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
   output: {
     path: path.resolve(__dirname, 'client'),
     filename: '[name].bundle.js'
