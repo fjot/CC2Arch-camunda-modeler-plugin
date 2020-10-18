@@ -1,0 +1,99 @@
+{
+  "name": "Proleit",
+  "uri": "http://proleit.com/schema/bpmn/proleit",
+  "prefix": "proleit",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "FormID",
+      "isAbstract": true,
+      "extends": [
+        "bpmn:StartEvent",
+        "bpmn:UserTask"
+      ],
+      "properties": [
+        {
+          "name": "pformKey",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "pformNumber",
+          "isAttr": true,
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "name": "FormData",
+      "superClass": [ "Element" ],
+      "meta": {
+        "allowedIn": [
+          "bpmn:StartEvent",
+          "bpmn:UserTask"
+        ]
+      },
+      "properties": [
+        {
+          "name": "pfields",
+          "type": "FormField",
+          "isMany": true
+        },
+        {
+          "name": "pbusinessKey",
+          "type": "String",
+          "isAttr": true
+        }
+      ]
+    },
+    {
+      "name": "FormField",
+      "superClass": [ "Element" ],
+      "properties": [
+        {
+          "name": "id",
+          "type": "String",
+          "isAttr": true
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "isAttr": true
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "isAttr": true
+        },
+        {
+          "name": "datePattern",
+          "type": "String",
+          "isAttr": true
+        },
+        {
+          "name": "defaultValue",
+          "type": "String",
+          "isAttr": true
+        },
+        {
+          "name": "properties",
+          "type": "Properties"
+        },
+        {
+          "name": "validation",
+          "type": "Validation"
+        },
+        {
+          "name": "values",
+          "type": "Value",
+          "isMany": true
+        }
+      ]
+    }
+  ],
+    "associations": [],
+    "enumerations": []
+}
+  
