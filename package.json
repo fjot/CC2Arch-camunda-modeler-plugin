@@ -23,11 +23,7 @@
     "@material/textfield": "^7.0.0",
     "bpmn-js": "^7.3.0",
     "bpmn-js-properties-panel": "^0.35.0",
-<<<<<<< HEAD
     "camunda-bpmn-moddle": "^4.4.0",
     "node-fetch": "^2.6.1"
-=======
-    "camunda-bpmn-moddle": "^4.4.0"
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
   }
 }

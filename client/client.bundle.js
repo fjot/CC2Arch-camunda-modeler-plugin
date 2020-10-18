@@ -99,11 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bpmn_js_properties_panel_lib_provider_camunda_CamundaPropertiesProvider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bpmn_js_properties_panel_lib_provider_camunda_CamundaPropertiesProvider__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bpmn-js/lib/util/ModelUtil */ "./node_modules/bpmn-js/lib/util/ModelUtil.js");
 /* harmony import */ var _implementation_proleitEntry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./implementation/proleitEntry */ "./client/implementation/proleitEntry.js");
-<<<<<<< HEAD
 /* eslint-disable license-header/header */
-=======
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 
 
 
@@ -111,7 +107,6 @@ __webpack_require__.r(__webpack_exports__);
 
 class ProleitPropertiesProvider {
   constructor(eventBus, canvas, bpmnFactory, elementRegistry, elementTemplates, translate) {
-<<<<<<< HEAD
 
     /**
      *
@@ -119,15 +114,10 @@ class ProleitPropertiesProvider {
      *
      * */
     this.proleitGroup = {};
-=======
-    /** GET all element form Forms tab and set a new group to attach with the actuall Form tab */
-    this.proleitGroup = {}
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
     this.camunda = new bpmn_js_properties_panel_lib_provider_camunda_CamundaPropertiesProvider__WEBPACK_IMPORTED_MODULE_0___default.a(eventBus, canvas, bpmnFactory, elementRegistry, elementTemplates, translate);
   }
 
   /**
-<<<<<<< HEAD
    *
    *  Get current Tabs and add a new custom group
    *
@@ -137,11 +127,6 @@ class ProleitPropertiesProvider {
    */
   getTabs(element) {
     console.log(this.camunda);
-=======
-   * @param {Object} element
-   */
-  getTabs(element) {
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
     var tabsArray = this.camunda.getTabs(element);
     var formIndex;
     var formsTab = tabsArray.filter((item, index) => {
@@ -155,7 +140,6 @@ class ProleitPropertiesProvider {
       var newFormsTabContent = this.setContentGroup(formsTab[0]);
       tabsArray[formIndex] = newFormsTabContent;
     }
-<<<<<<< HEAD
     return tabsArray;
   }
 
@@ -169,26 +153,13 @@ class ProleitPropertiesProvider {
    * @param {Object} element
    */
   createProleitGroups(element) {
-=======
-   return  tabsArray;
-  };
-
-  /* Create a new Group to add into panel */
-  /**
-   * @param {Object} element
-   */
-  createProleitGroups (element){
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
     this.proleitGroup = {
       id: 'proleit-group',
       label: 'Forms',
       entries: []
     };
     if (Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["is"])(element, 'bpmn:UserTask')) {
-<<<<<<< HEAD
 
-=======
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       /**
        * @param  {Object} this.proleitGroup
        * @param  {Object} element
@@ -199,16 +170,11 @@ class ProleitPropertiesProvider {
       this.proleitGroup
     ];
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
   /**
    * @param {Object} formsTab
    */
   setContentGroup(formsTab) {
-<<<<<<< HEAD
     if (formsTab.groups.length > 0) {
 
       /**
@@ -233,24 +199,6 @@ function registerPlugin() {
   console.info('Plugin successfully registered');
 }
 
-=======
-    // we replace the actual group for proleit group
-    if (formsTab.groups.length > 0 ) {
-     /*** Deleting the rest of the entries and replace the new Proliet group */
-    formsTab.groups.splice(0, 1, this.proleitGroup);
-    //formsTab.groups.push(this.proleitGroup);
-    }
-    return formsTab;
-  };
-
-};
-
-function registerPlugin() {
-  console.info('Plugin successfully registered');
-};
-
-// Specify the module using a unique name
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 // Use __init__ to make sure an instance will be created
 /* harmony default export */ __webpack_exports__["default"] = ({
   __init__: ['POC'],
@@ -274,11 +222,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProleitPropertiesProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProleitPropertiesProvider */ "./client/ProleitPropertiesProvider.js");
 /* harmony import */ var _descriptor_proleit_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./descriptor/proleit.json */ "./client/descriptor/proleit.json");
 var _descriptor_proleit_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./descriptor/proleit.json */ "./client/descriptor/proleit.json", 1);
-<<<<<<< HEAD
 /* eslint-disable license-header/header */
 
-=======
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 
 
 
@@ -312,7 +257,6 @@ module.exports = JSON.parse("{\"name\":\"Proleit\",\"uri\":\"http://proleit.com/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bpmn-js-properties-panel/lib/helper/CmdHelper */ "./node_modules/bpmn-js-properties-panel/lib/helper/CmdHelper.js");
 /* harmony import */ var bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0__);
-<<<<<<< HEAD
 /* harmony import */ var bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bpmn-js/lib/util/ModelUtil */ "./node_modules/bpmn-js/lib/util/ModelUtil.js");
 /* harmony import */ var _material_textfield__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/textfield */ "./node_modules/@material/textfield/index.js");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-fetch */ "./node_modules/node-fetch/browser.js");
@@ -322,62 +266,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import entryFactory from 'bpmn-js-properties-panel/lib/factory/EntryFactory';
-=======
-/* harmony import */ var bpmn_js_properties_panel_lib_factory_EntryFactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bpmn-js-properties-panel/lib/factory/EntryFactory */ "./node_modules/bpmn-js-properties-panel/lib/factory/EntryFactory.js");
-/* harmony import */ var bpmn_js_properties_panel_lib_factory_EntryFactory__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bpmn_js_properties_panel_lib_factory_EntryFactory__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bpmn-js/lib/util/ModelUtil */ "./node_modules/bpmn-js/lib/util/ModelUtil.js");
-/* harmony import */ var _material_textfield__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/textfield */ "./node_modules/@material/textfield/index.js");
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 
 
 
 
-<<<<<<< HEAD
-=======
-//import * as name from '../angular-element/textInput.js';
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 
 var modelPropertyInput = 'pformKey';
 var modelPropertyInputFloat = 'pformNumber';
 
-<<<<<<< HEAD
 /** TEXTINPUTFIELD */
-=======
-var htmlAngular =
-  '<label>Angular Element</label>' +
-  '<p style="font-size:50px; margin: 0">&#128532</p>'
-
-var htmlWebFrame =
-  '<label>Web Component</label>' +
-  '<br>' +
-  '<plantit-web-frame>Hi from SDK Web Frame with out functionality</plantit-web-frame>'
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 var htmlTextField =
   '<div>' +
   '<label for="form_key">Form Key Text Proleit</label>' +
   '<input type="text"' + 'name="' + modelPropertyInput + '"' + 'id="form_key"">' +
-<<<<<<< HEAD
   '</div>';
 
 /** NUMERICALINPUT */
-=======
-  '</div>'
-
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 var htmlTextFieldNumber =
 '<div>' +
 '<label for="form_key">Form Key Float Proleit</label>' +
 '<input type="text"' + 'name="' + modelPropertyInputFloat + '"' + 'id="form_number"">' +
-<<<<<<< HEAD
 '</div>';
 
 /** CUSTOMINPUT */
-=======
-'</div>'
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 var htmlTextFieldMaterial =
   '<label class="mdc-text-field mdc-text-field--outlined">' +
   '<input type="text"' + 'name="' + modelPropertyInput + '"' + 'class="mdc-text-field__input" aria-labelledby="my-label-id">' +
@@ -388,7 +299,6 @@ var htmlTextFieldMaterial =
   '</span>' +
   '<span class="mdc-notched-outline__trailing"></span>' +
   '</span>' +
-<<<<<<< HEAD
   '</label>';
 
 /** HHTP CALL */
@@ -437,88 +347,17 @@ function proLeiTEntry(group, element) {
     modelPropertyInput: modelPropertyInput,
     get: (element) => {
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
-=======
-  '</label>'
-
-var htmlDropdown =
-  '<label for="">Select a Form customized</label>' +
-  '<select id="dropdownlist">' +
-  '<option>Form 1</option>' +
-  '<option>Form 2</option>' +
-  '<option>Form 3</option>' +
-  '</select>'
-
-function proLeiTEntry(group, element) {
-
-  /** 
-   * 
-   * 
-   * Factory entries - Camunada Component 
-   * 
-   * 
-   * */
-  group.entries.push(bpmn_js_properties_panel_lib_factory_EntryFactory__WEBPACK_IMPORTED_MODULE_1___default.a.textField({
-    id: 'form-key',
-    label: 'Form Key from Camunda',
-    modelProperty: 'FormKey',
-    get: function (element) {
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
-      return {
-        FormKey: bo.get('proleit:pformKey')
-      };
-    },
-    set: function (element, values) {
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element), commands = [];
-      var FormKey = values.FormKey || undefined;
-      commands.push(bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default.a.updateBusinessObject(element, bo, { 'proleit:pformKey': FormKey }));
-      console.log(commands)
-      return commands
-    }
-  }));
-
-  /**
-   * 
-   * 
-   * Custom entries - Title 
-   * 
-   * 
-  */
-  group.entries.push({
-    id: 'proleit-subtitle',
-    html: '<div style="font-size: 20px; color: #666"; font-weight: bold>Welcome to ProLeiT Editor</div>'
-  });
-
-
-  /**
-   * 
-   * 
-   *  Custom entries Textfield text
-   *  
-   * */
-  group.entries.push({
-    id: 'ptext_id',
-    html: htmlTextField,
-    modelPropertyInput: modelPropertyInput,
-    get: (element) => {
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       return {
         pformKey: bo.get('proleit:pformKey')
       };
     },
     set: (element, values) => {
-<<<<<<< HEAD
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
       var pformKey = values;
-=======
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
-      var pformKey = values
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       return bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default.a.updateBusinessObject(element, bo, pformKey);
     }
   });
 
-<<<<<<< HEAD
   /**
    *
    *
@@ -531,37 +370,17 @@ function proLeiTEntry(group, element) {
     modelPropertyInputFloat: modelPropertyInputFloat,
     get: (element) => {
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
-=======
-    /**
-   * 
-   * 
-   *  Custom entries Textfield float
-   *  
-   * */
-  group.entries.push({
-    id: 'pfloat_id',
-    html: htmlTextFieldNumber,
-    modelPropertyInputFloat: modelPropertyInputFloat,
-    get: (element) => {
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       return {
         pformNumber: bo.get('proleit:pformNumber')
       };
     },
     set: (element, values) => {
-<<<<<<< HEAD
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
       var pformNumber = values;
-=======
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
-      var pformNumber = values
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       return bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default.a.updateBusinessObject(element, bo, pformNumber);
     }
   });
 
-<<<<<<< HEAD
 
   /**
    *
@@ -569,39 +388,22 @@ function proLeiTEntry(group, element) {
    *  Custom entries Textfield Customized
    *
    *
-=======
-  /**
-   * 
-   * 
-   *  Custom entries Textfield Customized 
-   * 
-   * 
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
    * */
 
   group.entries.push({
     id: 'ptextmaterial_id',
-<<<<<<< HEAD
     html: htmlTextFieldMaterial.trim(),
     modelPropertyInput: modelPropertyInput,
     get: (element) => {
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
       // eslint-disable-next-line no-undef
       var textField = new _material_textfield__WEBPACK_IMPORTED_MODULE_2__["MDCTextField"](document.querySelector('.mdc-text-field'));
-=======
-    html: htmlTextFieldMaterial,
-    modelPropertyInput: modelPropertyInput,
-    get: (element) => {
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
-      var textField = new _material_textfield__WEBPACK_IMPORTED_MODULE_3__["MDCTextField"](document.querySelector('.mdc-text-field'));
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
       textField.foundation.activateFocus();
       return {
         pformKey: bo.get('proleit:pformKey')
       };
     },
     set: (element, values) => {
-<<<<<<< HEAD
       var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_1__["getBusinessObject"])(element);
       var pformKey = values;
       return bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default.a.updateBusinessObject(element, bo, pformKey);
@@ -631,40 +433,6 @@ function proLeiTEntry(group, element) {
   });
 
 
-=======
-      var bo = Object(bpmn_js_lib_util_ModelUtil__WEBPACK_IMPORTED_MODULE_2__["getBusinessObject"])(element);
-      var pformKey = values
-      return bpmn_js_properties_panel_lib_helper_CmdHelper__WEBPACK_IMPORTED_MODULE_0___default.a.updateBusinessObject(element, bo, pformKey);
-    }
-  });
-  
-  /**
-   * 
-   * 
-   *  Custom entries Web Component  
-   * 
-   * 
-   * */
-
-  group.entries.push({
-    id: 'proleit-angular',
-    html: htmlWebFrame
-  });
-
-  /**
-   * 
-   * 
-   *  Custom entries Angular Element
-   * 
-   * 
-   * */
-
-  group.entries.push({
-    id: 'proleit-angular',
-    html: htmlAngular
-  });
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 }
 /* harmony default export */ __webpack_exports__["default"] = (proLeiTEntry);
 
@@ -26296,7 +26064,6 @@ function remove(el) {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./node_modules/node-fetch/browser.js":
 /*!********************************************!*\
   !*** ./node_modules/node-fetch/browser.js ***!
@@ -26333,8 +26100,6 @@ exports.Response = global.Response;
 
 /***/ }),
 
-=======
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 /***/ "./node_modules/selection-update/index.js":
 /*!************************************************!*\
   !*** ./node_modules/selection-update/index.js ***!

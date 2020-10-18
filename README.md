@@ -4,7 +4,6 @@ To evaluate the functionality and possibility of adding our own sdk. A proof of 
 
 ## Register a Plugin
 
-<<<<<<< HEAD
 To register a new plugin on camunda modeler is considered as a basis the official documentation. Please see https://github.com/camunda/camunda-modeler-plugin-helpers
 
 ## Properties panel understanding
@@ -32,12 +31,4 @@ proleitGroup = {
 
 For more information plis contact me francisco.ortuzar@proleit.com
 
-=======
-To register a new plugin on camunda modeler is considered as a basis the official documentation. Please see https://github.com/camunda/camunda-modeler/tree/master/docs/plugins
-
-## Properties panel understanding
-
-![Image of properties panels](https://cc2archi.blob.core.windows.net/images/ppdiagram.jpg)
-
->>>>>>> 95172327c78d3f607f670da3528f6457a1d3c304
 
